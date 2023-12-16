@@ -1,9 +1,4 @@
-type IconContainerProps = {
-  isDarkMode: boolean;
-  icon: any;
-  darkColor: string;
-  lightColor: string;
-};
+import type { IconContainerProps } from "@/types";
 
 const IconContainer = (props: IconContainerProps) => {
   const { isDarkMode, icon, darkColor, lightColor } = props;

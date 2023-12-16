@@ -9,7 +9,11 @@ export default function Home() {
     setIsDarkMode(!isDarkMode);
   };
   return (
-    <div className={`min-h-screen ${isDarkMode ? "bg-primaryDark text-white" : "bg-primaryLight text-black"}`}>
+    <div
+      className={`min-h-screen ${
+        isDarkMode ? "bg-primaryDark text-white" : "bg-primaryLight text-black"
+      }`}
+    >
       <Header isDarkMode={isDarkMode} handleDarkMode={handleDarkMode} />
       <Hero isDarkMode={isDarkMode} />
     </div>

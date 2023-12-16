@@ -3,11 +3,8 @@ import { HiMenuAlt1 } from "react-icons/hi";
 import { GrFormClose } from "react-icons/gr";
 import { motion, AnimatePresence } from "framer-motion";
 import { BsFillMoonFill, BsFillSunFill } from "react-icons/bs";
+import type { HeaderProps } from "@/types";
 
-type HeaderProps = {
-  isDarkMode: boolean;
-  handleDarkMode: () => void;
-};
 const Header = (props: HeaderProps) => {
   const { isDarkMode, handleDarkMode } = props;
   const [toggle, setToggle] = useState<boolean>(false);
@@ -102,6 +99,23 @@ const Header = (props: HeaderProps) => {
                 <li>
                   <a href="Contact">Contact</a>
                 </li> */}
+                <li>
+                <button
+                  className="text-[17px]"
+                  onClick={handleDarkMode}
+                  type="button"
+                >
+                  {isDarkMode ? (
+                    <span className="text-[30px] outline-none focus:outline-none text-yellow-200">
+                      <BsFillSunFill />
+                    </span>
+                  ) : (
+                    <span className="text-[25px] outline-none focus:outline-none text-black">
+                      <BsFillMoonFill />
+                    </span>
+                  )}
+                </button>
+              </li>
               </ul>
             </motion.div>
           ) : null}

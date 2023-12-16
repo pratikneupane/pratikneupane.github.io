@@ -1,73 +1,10 @@
-import {
-  SiExpress,
-  SiMysql,
-  SiNextdotjs,
-  SiReact,
-  SiTypescript,
-} from "react-icons/si";
-import { IoLogoNodejs } from "react-icons/io";
-import { DiMongodb } from "react-icons/di";
-
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import IconContainer from "./IconContainer";
 import Link from "next/link";
+import { icons } from "../constants/techStack";
+import type { Icon, HeroProps } from "@/types/";
 
-type Props = {
-  isDarkMode: boolean;
-};
-
-type Icon = {
-  name: string;
-  icon: JSX.Element;
-  darkColor: string;
-  lightColor: string;
-};
-
-const icons: Icon[] = [
-  {
-    name: "Typescript",
-    icon: <SiTypescript />,
-    darkColor: "#007acc",
-    lightColor: "#007acc",
-  },
-  {
-    name: "React",
-    icon: <SiReact />,
-    darkColor: "#61DAFB",
-    lightColor: "#61DAFB",
-  },
-  {
-    name: "Next.js",
-    icon: <SiNextdotjs />,
-    darkColor: "#ffffff",
-    lightColor: "#000000",
-  },
-  {
-    name: "Node.js",
-    icon: <IoLogoNodejs />,
-    darkColor: "#339933",
-    lightColor: "#339933",
-  },
-  {
-    name: "Express.js",
-    icon: <SiExpress />,
-    darkColor: "#ffffff",
-    lightColor: "#000000",
-  },
-  {
-    name: "MongoDB",
-    icon: <DiMongodb />,
-    darkColor: "#47A248",
-    lightColor: "#47A248",
-  },
-  {
-    name: "MySQL",
-    icon: <SiMysql />,
-    darkColor: "#00758F",
-    lightColor: "#00758F",
-  },
-];
-const Hero = (props: Props) => {
+const Hero = (props: HeroProps) => {
   const { isDarkMode } = props;
   return (
     <section
@@ -91,14 +28,18 @@ const Hero = (props: Props) => {
               <Link
                 href={"https://linkedin.com/in/lordhendrix40"}
                 target="_blank"
-                className={`${isDarkMode ? "text-white" : "text-black"}} hover:text-[#0077b5] transition-ease-in-out duration-300`}
+                className={`${
+                  isDarkMode ? "text-white" : "text-black"
+                }} hover:text-[#0077b5] transition-ease-in-out duration-300`}
               >
                 <FaLinkedin className="text-3xl" />
               </Link>
               <Link
                 href={"https://github.com/pratikneupane"}
                 target="_blank"
-                className={`${isDarkMode ? "text-white" : "text-black"}} hover:text-[#333333] transition-ease-in-out duration-300`}
+                className={`${
+                  isDarkMode ? "text-white" : "text-black"
+                }} hover:text-[#333333] transition-ease-in-out duration-300`}
               >
                 <FaGithub className="text-3xl" />
               </Link>
