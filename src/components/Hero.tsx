@@ -1,9 +1,18 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import IconContainer from "./IconContainer";
 import Link from "next/link";
-import { icons } from "../constants/techStack";
-import type { Icon, HeroProps } from "@/types/";
+import type { HeroProps } from "@/types/";
 
+const icons = [
+  "typescript",
+  "react",
+  "next",
+  "tailwind",
+  "nodejs",
+  "express",
+  "mongodb",
+  "mysql",
+];
 const Hero = (props: HeroProps) => {
   const { isDarkMode } = props;
   return (
@@ -56,14 +65,8 @@ const Hero = (props: HeroProps) => {
             Tech Stack
           </h1>
           <ul className=" flex flex-wrap items-center justify-center gap-6 ">
-            {icons.map((icon: Icon) => (
-              <IconContainer
-                key={icon.name}
-                isDarkMode={isDarkMode}
-                icon={icon.icon}
-                darkColor={icon.darkColor}
-                lightColor={icon.lightColor}
-              />
+            {icons.map((icon: string) => (
+              <IconContainer key={icon} isDarkMode={isDarkMode} icon={icon} />
             ))}
           </ul>
         </div>
