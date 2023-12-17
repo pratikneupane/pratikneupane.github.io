@@ -19,7 +19,8 @@ Welcome to my personal portfolio! This project showcases my skills, projects, an
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 
 ## Contact
 
