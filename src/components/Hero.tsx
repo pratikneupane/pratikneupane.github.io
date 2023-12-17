@@ -1,4 +1,5 @@
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FiGithub,  } from "react-icons/fi";
+import { TbBrandLinkedin } from "react-icons/tb";
 import IconContainer from "./IconContainer";
 import Link from "next/link";
 import type { HeroProps } from "@/types/";
@@ -41,16 +42,16 @@ const Hero = (props: HeroProps) => {
                   isDarkMode ? "text-white" : "text-black"
                 }} hover:text-[#0077b5] transition-ease-in-out duration-300`}
               >
-                <FaLinkedin className="text-3xl" />
+                <TbBrandLinkedin className="text-3xl" />
               </Link>
               <Link
                 href={"https://github.com/pratikneupane"}
                 target="_blank"
                 className={`${
                   isDarkMode ? "text-white" : "text-black"
-                }} hover:text-[#333333] transition-ease-in-out duration-300`}
+                }} hover:text-[#0077b5] transition-ease-in-out duration-300 flex justify-center items-center`}
               >
-                <FaGithub className="text-3xl" />
+                <FiGithub className="text-2xl" />
               </Link>
             </div>
           </article>

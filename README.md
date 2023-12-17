@@ -4,7 +4,11 @@
 
 Welcome to my personal portfolio! This project showcases my skills, projects, and experience in the field of web development.
 
-## Technologies Used
+Credits for the design goes to [Stefan](https://github.com/stefvndev)
+
+#### [Live Demo](https://pratikneupane.github.io)
+
+## Built with
 
 - [Next.js](https://nextjs.org/)
 - [React](https://reactjs.org/)
@@ -13,14 +17,10 @@ Welcome to my personal portfolio! This project showcases my skills, projects, an
 - [React Icons](https://react-icons.github.io/react-icons/)
 - [TypeScript](https://www.typescriptlang.org/)
 
-## View Live Project at:
-
-[https://pratikneupane.github.io](https://pratikneupane.github.io)
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 
 ## Contact
 
